@@ -1,0 +1,1 @@
+A complete solution for monitoring gas pipelines. Leveraging IoT and Cloud Computing technology to provide monitoring and leakage detection. Also a suitable front-end website is designed for real time monitoring.

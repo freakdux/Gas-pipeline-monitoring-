@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/dash.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <p>Gas Pipeline Monitoring</p>
+        </div>
+    </nav>
+    <div class="plot-images">
+        <!-- {% for plot_path in plot_paths %}
+            <img src="{{ plot_path }}" alt="Plot">
+        {% endfor %} -->
+
+        <h2 style="text-align: center"> Zone 1</h2>
+        {% for i in range(0, plot_paths|length-4, 2) %}
+        <div class="plot-group">
+            <img src="{{ plot_paths[i] }}" alt="Plot">
+            {% if i + 1 < plot_paths|length-4 %} <img src="{{ plot_paths[i + 1] }}" alt="Plot">
+                {% endif %}
+        </div>
+        {% endfor %}
+
+        <h2 style="text-align: center"> Zone 2</h2>
+        {% for i in range(2, plot_paths|length-2, 2) %}
+        <div class="plot-group">
+            <img src="{{ plot_paths[i] }}" alt="Plot">
+            {% if i + 1 < plot_paths|length-2 %} <img src="{{ plot_paths[i + 1] }}" alt="Plot">
+                {% endif %}
+        </div>
+        {% endfor %}
+
+        <h2 style="text-align: center"> Zone 3</h2>
+        {% for i in range(4, plot_paths|length, 2) %}
+        <div class="plot-group">
+            <img src="{{ plot_paths[i] }}" alt="Plot">
+            {% if i + 1 < plot_paths|length %} <img src="{{ plot_paths[i + 1] }}" alt="Plot">
+                {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <div class="cent">
+        <a href="{{url_for('logout')}}" class="btn">Logout</a>
+    </div>
+
+</body>
+
+</html>

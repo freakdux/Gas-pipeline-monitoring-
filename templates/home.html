@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About Us</a></li>
+            <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        </ul>
+        <div class="logo">
+            <p>Gas Pipeline Monitoring</p>
+        </div>
+    </nav>
+    <div class="notNav">
+        <div class="phrase">
+            <h1>Eliminate Manual Monitoring</h1>
+            <p>Step into the realm of advanced gas pipeline monitoring technology. Experience a comprehensive system designed to ensure real-time surveillance, leveraging state-of-the-art IoT solutions to guarantee the safety and efficiency of gas transmission networks. 
+                Equipped with advanced sensors and predictive analytics, this system provides proactive monitoring, detecting anomalies before they escalate, and thus preventing potential hazards and minimizing downtime. 
+                The intuitive user interface offers seamless access to critical data, empowering operators with actionable insights to optimize operations and enhance decision-making. 
+                Join the revolution in gas pipeline management, ensuring reliability, sustainability, and peace of mind for stakeholders worldwide.</p>
+                <a href="{{url_for('contact')}}" class="btn">Having Doubts? Write Us</a>
+        </div>
+        <div class="container">
+            <img src="/static/eng1.png" alt="WorkingEng">
+            <div class="links">
+                <a href="{{url_for('login')}}" class="btn">Login</a><br>
+                <a href="{{url_for('register')}}" class="btn">Register</a><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

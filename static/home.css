@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.889) 50%, rgba(247, 247, 247, 0.21)), url('/static/bg.jpg');
+    
+}
+
+nav {
+    background-color: #474e5d;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.logo{
+    color: white;
+    margin-right: 20px;
+}
+
+a{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    width: 45%;
+    height: 90vh;
+}
+
+.container img{
+    margin-top: 70px;
+}
+
+.links{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.container a{
+    margin: 20px;
+    align-items: center;
+}
+
+.btn {
+    background-color: #000000; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: background-color 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.279); 
+}
+
+.btn:hover {
+    background-color: #555; 
+}
+
+.btn:active {
+    background-color: #555; 
+}
+
+form {
+    width: 300px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+centered-link {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    
+    color: #474e5d;
+    cursor: pointer;
+}
+
+.notNav{
+    display: flex;
+}
+
+.phrase{
+    color: rgb(255, 255, 255);
+    margin: 40px;
+    width: 60%;
+    align-items: center;
+    
+}
+
+.phrase h1{
+    font-family: sans-serif;
+    margin-top: 100px;
+    align-items: center;
+    font-size: 50px;
+}
+.phrase p{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 650px;
+}
+
+.plot-images{
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+}

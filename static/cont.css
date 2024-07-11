@@ -1,0 +1,80 @@
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav p{
+    color: white;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    /* text-align: center; */
+    margin-left: 50px;
+    color: rgb(204, 203, 203);
+}
+
+form {
+    width: 500px;
+    margin: 0 auto; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contForm{
+    float: right;
+    width: 40%;
+    align-self: center;
+    position: relative;
+    /* margin:200px; */
+}
+
+.lessImp{
+    float: left;
+    width: 60%;
+}
+
+.busHr{
+    width: 100%;
+    align-self: center;
+}
+
+label {
+    display: block;
+    margin-bottom: -7px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}

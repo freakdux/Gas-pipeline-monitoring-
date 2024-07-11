@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/cont.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About Us</a></li>
+            <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        </ul>
+        <div class="logo">
+            <p>Gas Pipeline Monitoring</p>
+        </div>
+    </nav>
+
+    <h1 style="text-align:center">Contact Us</h1>
+
+    <div class="lessImp">
+        <h3>Get in Touch</h3>
+        <p>We're here to help you with any questions or concerns you may have. Feel free to reach out to us via email or phone.</p>
+        <h3>Mailing Address</h3>
+        <p>306 Amayra Greens<br>Kharar, Punjab, 140301<br>India</p>
+        <h3>Phone Number</h3>
+        <p>General Inquiries: <a href="tel:+911234567890">+91 9876543210</a><br>Customer Support: <a href="tel:+911234567890">+91 1234567890</a></p>
+        <h3>Email Us</h3>
+        <p>For general inquiries, please email <a href="mailto:mailpiyush02@yahoo.com">piyush@gpms.com</a>.</p>
+        <p>For customer support, please email <a href="mailto:rutendramahato74@gmail.com">support@gpms.com</a>.</p>
+    </div>
+
+    <div class="contForm">
+        <h3>Write to Us</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Write To Us" required></textarea><br>
+            <button type="button" value="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <h3>Business Hours</h3>
+    <p>Our team is available to assist you during the following hours:<br>
+        Monday - Friday: 9:00 AM - 6:00 PM (IST) <br>
+        Saturday - Sunday: Closed</p>
+
+</body>
+
+</html>
